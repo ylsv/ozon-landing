@@ -1,0 +1,212 @@
+/* General styles */
+@font-face {
+  font-family: 'GTEestiProDisplay';
+  src: url('../font/GTEestiProDisplay.otf');
+}
+
+body {
+  background: #005BFF;
+  color: #fff;
+  font-family: GTEestiProDisplay, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 0.133333px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  background: #F91155;
+  border-radius: 3px;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background: #005BFF;
+  border: 2px solid #FFFFFF;
+}
+
+.btn:disabled {
+  background: #C2C2C2;
+  border: 2px solid transparent;
+}
+
+/* Navigation */
+.menu { 
+  margin: 31px 232.5px 0 234.5px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 7px 15px 6px;
+  border: 1px solid transparent;
+}
+
+.menu__item_focused {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+}
+
+.menu__item_focused:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+}
+
+.menu__item:hover {
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+/* Main section */
+.main {
+  margin-left: 63px;
+}
+
+.text-section {
+  width: 630px;
+  margin-top: 147px;
+}
+
+.main__header {
+  margin: 0;
+  font-size: 46px;
+  line-height: 48px;
+  letter-spacing: 1.34167px;  
+}
+
+.main__subheader {
+  margin-top: 35px;
+  margin-bottom: 96px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.7px;
+}
+
+/* Images */
+.main__btn {
+  padding: 24px 16.5px;
+}
+
+.img-section__scroll {
+  position: absolute;
+  left: 63px;
+  bottom: 44px;
+}
+
+.img-section__letterN {
+  position: absolute;
+  left: 429px;
+  bottom: 44px;
+}
+
+.img-section__aim {
+  position: absolute;
+  left: 501px;
+  bottom: 124px;
+}
+.img-section__guys {
+  position: absolute;
+  bottom: 0;
+  right: 177px;
+}
+
+.img-section__letterO1 {
+  position: absolute;
+  top: 112px;
+  left: 656px;  
+}
+
+.img-section__money {
+  position: absolute;
+  top: 150px;
+  left: 732px;  
+}
+
+.img-section__letterZ {
+  position: absolute;
+  top: 104px;
+  right: 134px;
+}
+
+.img-section__time {
+  position: absolute;
+  top: 164px;
+  right: 186px;
+}
+
+.img-section__letterO2 {
+  position: absolute;
+  right: 19px;
+  bottom: 66px; 
+}
+
+.img-section__deal {
+  position: absolute;
+  right: 47px;
+  bottom: 137px; 
+}
+
+
+/* Media */
+
+@media screen and (max-width: 1290px) {
+    .img-section__guys {
+      width: 400px;
+    }
+
+    
+  .img-section__letterO1 {
+    position: absolute;
+    top: 312px;
+    left: 656px;  
+  }
+
+  .img-section__money {
+    position: absolute;
+    top: 350px;
+    left: 732px;  
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .menu {
+    margin: 31px 50px 0 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img-section__scroll, .img-section__letterN, .img-section__letterO1, .img-section__letterO2, .img-section__money, .img-section__time, .img-section__letterZ, .img-section__deal, .img-section__aim {
+    display: none;
+  }
+
+  .img-section__guys {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .img-section__guys, .menu {
+    display: none;
+  }
+
+  .main, .img-section {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
