@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/page2.css">
+  <title>OZON</title>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+        <li class="menu__item menu__item_focused"><a href="#">О программе</a></li>
+        <li class="menu__item"><a href="#">Спланировать доход</a></li>
+        <li class="menu__item"><a href="#">Привилегии</a></li>
+        <li class="menu__item"><a href="#">Поддержка</a></li>
+        <li class="menu__item"><a href="#">Стать Менеджером</a></li>
+        <li class="menu__item"><a href="#">Бизнес Кабинет</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="main">
+      <h1 class="main__header">Заполните форму:</h1>
+        <form action="#" class="main__form">
+          <div class="main__name-group">
+              <div class="form__block">
+                  <div class="form__item">
+                      <label for="name">ФИО*</label>
+                    </div>
+                    <div class="form__item">
+                      <label for="dob">Дата рождения</label>
+                    </div>
+                    <div class="form__item">
+                        <label for="city">Город*</label>
+                    </div>
+                    <div class="form__item">
+                        <label for="tel">Телефон*</label>
+                    </div>
+                    <div class="form__item">
+                        <label for="email">E-mail*</label>
+                    </div>
+              </div>
+    
+              <div class="form__block">
+                <div class="form__item">
+                  <input class="form__item_input" type="text" name="name" id="name" required>
+                </div>
+                <div class="form__item">
+                  <input class="form__item_input" type="date" name="dob" id="dob">
+                </div>
+                <div class="form__item">
+                    <select class="form__item_input" name="city" id="city" required>
+                      <option value="moscow">Москва</option>
+                      <option value="moscow">Москва</option>
+                      <option value="moscow">Москва</option>
+                      <option value="moscow">Москва</option>
+                      <option value="moscow">Москва</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <input class="form__item_input" type="tel" name="tel" id="tel" required>
+                </div>
+                <div class="form__item">
+                    <input class="form__item_input" type="email" name="email" id="email" required>
+                </div>
+              </div>
+          </div>
+          
+          <div class="form__block">
+            <div class="form__item">
+              <input class="form__item_input" type="text" name="vk" id="vk">
+            </div>
+            <div class="form__item">
+              <input class="form__item_input" type="text" name="ok" id="ok">
+            </div>
+            <div class="form__item">
+              <input class="form__item_input" type="text" name="fb" id="fb">
+            </div>
+            <div class="form__item">
+              <input class="form__item_input" type="text" name="inst" id="inst">
+            </div>
+          </div>
+
+          <div class="form__block checkbox">
+            <div class="form__checkbox">
+              <input type="checkbox" name="offer" id="offer">
+              <label for="offer">Я принимаю условия Оферты и даю своё согласие OZON на обработку моей персональной информации на условиях, определенных Политикой конфиденциальности.</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" name="participant" id="participant">
+              <label for="participant">Подтверждаю, что не являюсь участником партнёрской программы OZON/ИЛИ являюсь, но отказываюсь от участия в ней и присоединяюсь к реферальной программе в качестве Менеджера OZON.</label>
+            </div>
+            <input type="submit" value="Отправить" class="btn form__btn">
+          </div>
+        </form>
+        <p>*Обязательное поле для заполнения</p>
+    </section>
+
+    <section class="note">
+      <h4 class="note__header">Перед заполнением заявки убедитесь, что:</h4>
+      <ul class="list">
+        <li class="list__item">Вы вошли в свой личный кабинет на OZON;</li>
+        <li class="list__item">ФИО и дата рождения указаны в соответствии с паспортом; А также корректно указаны контактные данные.</li>
+        <li class="list__item">Ошибки в указанных данных могут привести к отключению от программы. Будьте внимательны.</li>
+      </ul>
+    </section>
+  </main>  
+
+  <footer class="footer">
+    <div class="footer__phone">8 (800) 234-60-06 — круглосуточно</div>
+    <div class="footer__email">referral@ozon.ru</div>
+  </footer>
+</body>
+</html>
